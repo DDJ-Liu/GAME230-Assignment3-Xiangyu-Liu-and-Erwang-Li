@@ -19,7 +19,7 @@ void Game::handleInput(sf::RenderWindow& window) {
 
 	//LMB
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-		ParticleEffect* currentParticleEffect = new ParticleEffect(sf::Mouse::getPosition(window), 180);
+		ParticleEffect* currentParticleEffect = new ParticleEffect(sf::Mouse::getPosition(window), 600, 20);
 		currentParticleEffect->Emit();
 		particleStack.push_back(currentParticleEffect);
 	}

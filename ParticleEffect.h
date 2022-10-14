@@ -9,11 +9,13 @@ class ParticleEffect
 private:
 	sf::Vector2i position;
 	int lifespan;
-	Particle* particles[20];
+	Particle** particles;
 	boolean alive = false;
+	int particleNum;
+
 public:
 	//Prototypes
-	ParticleEffect(sf::Vector2i _position, int _lifespan);
+	ParticleEffect(sf::Vector2i _position, int _lifespan, int _particleNum);
 	//creates a new particle for every element of the particles array
 	void Emit();
 	//adds a new particle at the specified index in the particles array (it should also randomize the particle velocity in some way)

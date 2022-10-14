@@ -18,7 +18,6 @@ private:
 	int lifespan;
 	boolean alive = false;
 
-
 public:
 	Particle(float vx , float vy, float size, int life, sf::Color c);
 	~Particle();

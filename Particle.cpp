@@ -8,12 +8,13 @@ Particle::Particle(float vx = 0, float vy = 0, float size = 10, int life = 100, 
 	lifespan = life;
 	alive = true;
 }
+
 Particle::~Particle() {
 	alive = false;
 }
 //movement of particles
 void Particle::Update(RenderWindow& window) {
-	particle.setPosition(particle.getPosition() + velocity);
+	particle.setPosition(particle.getPosition() + Vector2f(velocity.x / 10,velocity.y/10));
 	lifespan--;
 	if (lifespan<=0) {
 		alive = false;
