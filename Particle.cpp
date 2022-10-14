@@ -10,7 +10,7 @@ Particle::Particle(float vx = 0, float vy = 0, float size = 10, int life = 100, 
 }
 
 Particle::~Particle() {
-	alive = false;
+
 }
 //movement of particles
 void Particle::Update(RenderWindow& window) {

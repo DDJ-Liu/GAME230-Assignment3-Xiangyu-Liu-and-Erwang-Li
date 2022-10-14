@@ -15,13 +15,15 @@ void Game::handleInput(sf::RenderWindow& window) {
 	while (window.pollEvent(event)) {
 		if (event.type == sf::Event::Closed)
 			window.close();
-	}
-
-	//LMB
-	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-		ParticleEffect* currentParticleEffect = new ParticleEffect(sf::Mouse::getPosition(window), 600, 20);
-		currentParticleEffect->Emit();
-		particleStack.push_back(currentParticleEffect);
+		//LMB
+		if (event.type == sf::Event::MouseButtonPressed) {
+			if (event.mouseButton.button == sf::Mouse::Button::Left) {
+				ParticleEffect* currentParticleEffect = new ParticleEffect(sf::Mouse::getPosition(window), 600, 5);
+				//		std::cout << "new particle effect" << std::endl;
+				currentParticleEffect->Emit();
+				particleStack.push_back(currentParticleEffect);
+			}
+		}
 	}
 }
 void Game::update(sf::RenderWindow& window) {

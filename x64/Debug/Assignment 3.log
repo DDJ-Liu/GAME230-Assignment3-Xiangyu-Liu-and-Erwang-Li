@@ -1,4 +1,7 @@
-﻿  ParticleEffect.cpp
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ParticleEffect.cpp(20,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Game.cpp
+D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(57,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ParticleEffect.cpp
+D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ParticleEffect.cpp(20,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ParticleEffect.cpp(20,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   Assignment 3.vcxproj -> D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\x64\Debug\Assignment 3.exe

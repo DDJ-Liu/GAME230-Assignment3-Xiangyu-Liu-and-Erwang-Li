@@ -22,6 +22,7 @@ using namespace gm;
 int main()
 {
     RenderWindow window(VideoMode(800, 600), "SFML works!");
+    window.setFramerateLimit(60);
 
     Game g;
     while (window.isOpen())
