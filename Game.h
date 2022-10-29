@@ -12,12 +12,11 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
-#include "Particle.h"
-#include "ParticleEffect.h"
-
 
 namespace gm {
 	class Game {
+	private:
+		
 	public:
 		//Prototypes
 		Game();
@@ -27,8 +26,12 @@ namespace gm {
 		~Game();
 	};
 
-	//Tool Random function
+	//Help functions
 	int Rand(int min, int max);
+	float Randf(float min, float max);
+	sf::Color hsv(int hue, float sat, float val);
+	
+
 }
 
 #endif
