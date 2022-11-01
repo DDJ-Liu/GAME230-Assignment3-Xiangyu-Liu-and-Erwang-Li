@@ -5,3 +5,4 @@ Right Click to generate particles
 Press Key to change particle types:  
     "Num1" - Colorful Bubbles (Looping)  
     "Num2" - Explosion (Non-Looping)  
+    "Num3" - Snow (Looping)
