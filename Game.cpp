@@ -2,13 +2,14 @@
 #include "Game.h"
 #include "ColorfulCirclesEffect.h"
 #include "ExplosionEffect.h"
+#include "Snow.h"
 using namespace gm;
 
 //Global variable
 //std::vector<ParticleEffect*> particleStack;
 ParticleEffect* currentParticleEffect;
 
-enum particleType{colorfulBubbles,explosion};
+enum particleType{colorfulBubbles,explosion,snow};
 particleType type = colorfulBubbles;
 
 Game::Game() {
@@ -42,6 +43,10 @@ void Game::handleInput(sf::RenderWindow& window) {
 					currentParticleEffect = new ExplosionEffect(sf::Mouse::getPosition(window), 600, 35, 3.f, false);
 					dynamic_cast<ExplosionEffect*>(currentParticleEffect)->Emit();
 					break;
+				case particleType::snow:
+					currentParticleEffect = new Snow(sf::Mouse::getPosition(window), 600, 50, 200.f, true);
+					dynamic_cast<Snow*>(currentParticleEffect)->Emit();
+					break;
 				default:
 					std::cout << "type error" << std::endl;
 					break;
@@ -55,7 +60,9 @@ void Game::handleInput(sf::RenderWindow& window) {
 			if (event.key.code == sf::Keyboard::Num2) {
 				type = particleType::explosion;
 			}
-
+			if (event.key.code == sf::Keyboard::Num3) {
+				type = particleType::snow;
+			}
 		}
 
 	}

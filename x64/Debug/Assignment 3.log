@@ -1,7 +1,6 @@
-﻿  CircleParticle.cpp
-  ColorfulCirclesEffect.cpp
-  ExplosionEffect.cpp
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ExplosionEffect.cpp(9,171): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+﻿  Main.cpp
+  Snow.cpp
+D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Snow.cpp(8,146): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=int
@@ -10,7 +9,7 @@ D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Ass
           [
               T=float
           ]
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ExplosionEffect.cpp(9,160): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Snow.cpp(8,134): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=int
@@ -19,42 +18,5 @@ D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Ass
           [
               T=float
           ]
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ExplosionEffect.cpp(19,106): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\ExplosionEffect.cpp(19,68): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  Game.cpp
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(97,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(108,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(136,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(136,40): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(136,31): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(137,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(137,40): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(137,29): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(138,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(138,40): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(138,29): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(139,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(139,38): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(139,29): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(140,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(140,38): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(140,29): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(141,49): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(141,40): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\Game.cpp(141,31): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-  HSVColor.cpp
-  Main.cpp
-  ParticleEffect.cpp
-  ShapeParticle.cpp
-  TriangleParticle.cpp
-D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\TriangleParticle.cpp(72,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
   Assignment 3.vcxproj -> D:\UCSC Courses\GAME 230 Fundamentals of Game Engineering\Repository\GAME230-Assignment3-Xiangyu-Liu-and-Erwang-Li\x64\Debug\Assignment 3.exe

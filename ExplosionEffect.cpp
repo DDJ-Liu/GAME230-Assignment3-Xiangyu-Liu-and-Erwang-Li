@@ -17,6 +17,7 @@ void ExplosionEffect::Update(sf::RenderWindow& window) {
 	//changes
 	for (int i = 0; i < particles.size(); i++) {
 		particles[i]->SetVelocity(Vector2f(particles[i]->GetVelocity().x * 0.98, particles[i]->GetVelocity().y * 0.98));
+		dynamic_cast<TriangleParticle*>(particles[i])->SetScale(dynamic_cast<TriangleParticle*>(particles[i])->GetScale() * 0.985);
 		particles[i]->SetPosition(Vector2f(particles[i]->GetPosition().x + particles[i]->GetVelocity().x, particles[i]->GetPosition().y + particles[i]->GetVelocity().y));
 		if (fabs(particles[i]->GetVelocity().x) + fabs(particles[i]->GetVelocity().y) < 0.5) {
 			particles[i]->SetAlive(false);
