@@ -21,7 +21,7 @@ using namespace gm;
 
 int main()
 {
-    RenderWindow window(VideoMode(800, 600), "SFML works!");
+    RenderWindow window(VideoMode(800, 600), "My Particle Generator");
     window.setFramerateLimit(60);
 
     Game g;

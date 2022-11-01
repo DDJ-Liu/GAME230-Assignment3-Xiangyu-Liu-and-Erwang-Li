@@ -3,28 +3,38 @@
 #define PARTICLE_EFFECT_H
 #include "Game.h"
 #include "Particle.h"
+#include <vector>
 
 class ParticleEffect
 {
-private:
-	sf::Vector2i position;
+protected:
+	sf::Vector2f position;
 	int lifespan;
-	Particle** particles;
+	//Particle** particles;
+
+	std::vector<Particle*> particles;
 	boolean alive = false;
 	int particleNum;
+	bool loop = false;
 
 public:
 	//Prototypes
-	ParticleEffect(sf::Vector2i _position, int _lifespan, int _particleNum);
-	//creates a new particle for every element of the particles array
-	void Emit();
-	//adds a new particle at the specified index in the particles array (it should also randomize the particle velocity in some way)
-	void AddParticle(int index);
-	void update(sf::RenderWindow& window);
-	void render(sf::RenderWindow& window);
-	boolean isAlive();
+	ParticleEffect();
+	ParticleEffect(const sf::Vector2f &position, int lifespan, int particleNum, bool loop);
+
+	//update & render
+	virtual void Update(sf::RenderWindow& window);
+	virtual void Render(sf::RenderWindow& window);
+
+	//adds a new particle at the specified index in the particles array (tailor to effects)
+	virtual void CreateParticle(int index) = 0;
+	//Creates a new particle for every element of the particles array
+	virtual void Emit();
+
+	virtual boolean isAlive() const;
 	~ParticleEffect();
 };
+
 
 #endif
 

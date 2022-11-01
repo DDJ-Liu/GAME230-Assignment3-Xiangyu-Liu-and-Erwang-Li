@@ -1,44 +1,56 @@
 //Written by Xiangyu Liu
 #include "Particle.h"
 
-Particle::Particle(float vx = 0, float vy = 0, float size = 10, int life = 100, sf::Color c = Color::Green) {
-	particle = CircleShape(size);
-	particle.setPosition(Vector2f(0, 0));
-	velocity = Vector2f(vx, vy);
-	lifespan = life;
-	alive = true;
+using namespace sf;
+
+//Constructor
+Particle::Particle(): lifespan(0) {};
+
+Particle::Particle(const Vector2f& position, const Vector2f& velocity, int lifespan) 
+: position(position), velocity(velocity), lifespan(lifespan), alive(true) {
 }
 
+//Destructor
 Particle::~Particle() {
 
 }
+
 //movement of particles
 void Particle::Update(RenderWindow& window) {
-	particle.setPosition(particle.getPosition() + Vector2f(velocity.x / 10,velocity.y/10));
-	lifespan--;
-	if (lifespan<=0) {
-		alive = false;
-		particle.setFillColor(Color::Transparent);
+	//particle.setPosition(particle.getPosition() + Vector2f(velocity.x / 10,velocity.y/10));
+	if(alive)
+		lifespan--;
+	if (alive && lifespan<=0) {
+		Sleep();
 	}
 }
 
-void Particle::Render(RenderWindow& window) {
-	window.draw(particle);
+//Setter
+void Particle::SetPosition(const sf::Vector2f& pos) {
+	position = pos;
+}
+void Particle::SetVelocity(const sf::Vector2f& v) {
+	velocity = v;
 }
 
-Vector2f Particle::GetPosition() {
-	return particle.getPosition();
-}
+void Particle::SetLifespan(int life) {
+	this->lifespan = life;
+};
+void Particle::SetAlive(bool a) {
+	this->alive = a;
+};
 
-float Particle::GetSize() {
-	return particle.getRadius();
-}
 
-boolean Particle::isAlive() {
+// Getters
+const Vector2f& Particle::GetPosition() const {
+	return position;
+}
+const Vector2f& Particle::GetVelocity() const {
+	return velocity;
+}
+const int Particle::GetLifespan() const {
+	return lifespan;
+}
+const boolean Particle::isAlive() const{
 	return alive;
-}
-
-void Particle::SetPosition(Vector2f pos) {
-	particle.setPosition(pos);
-	return;
 }
